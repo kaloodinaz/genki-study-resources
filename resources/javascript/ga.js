@@ -15,7 +15,7 @@ if (window.location.hostname == 'sethclydesdale.github.io') {
     };
     
     document.head.appendChild(gtag);
-  }(window, document, 'G-MDJRJYPV3V'));
+  }(window, document, 'G-P4QL7D47JS'));
   
   
   // Adsense
@@ -23,11 +23,11 @@ if (window.location.hostname == 'sethclydesdale.github.io') {
     // exclusions and preferences
     if (storageOK && localStorage.adverts == 'off' || /\/donate\/|\/download\//.test(window.location.pathname)) return false;
     
-    var adsense = document.createElement('SCRIPT');
-    adsense.async = true;
-    adsense.crossorigin = 'anonymous';
-    adsense.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + id;
-    document.head.appendChild(adsense);
+  //  var adsense = document.createElement('SCRIPT');
+  //  adsense.async = true;
+ //   adsense.crossorigin = 'anonymous';
+   // adsense.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + id;
+ //   document.head.appendChild(adsense);
     
     // function for inserting ads into document
     var insertAds = function() {
@@ -41,11 +41,11 @@ if (window.location.hostname == 'sethclydesdale.github.io') {
           ad = '<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="' + id + '" data-ad-slot="{SLOT}"></ins>';
           
           // top page ad
-          content.insertAdjacentHTML('afterbegin', '<div class="ad-container ad-top">' + ad.replace('{SLOT}', '8249052960') + '</div>');
+          content.insertAdjacentHTML('afterbegin', '<div class="ad-container ad-top">' + ad.replace('{SLOT}', '') + '</div>');
           (adsbygoogle = window.adsbygoogle || []).push({});
 
           // bottom page ad
-          content.insertAdjacentHTML('beforeend', '<div class="ad-container ad-bottom">' + ad.replace('{SLOT}', '4309807952') + '</div>');
+          content.insertAdjacentHTML('beforeend', '<div class="ad-container ad-bottom">' + ad.replace('{SLOT}', '') + '</div>');
           (adsbygoogle = window.adsbygoogle || []).push({});
         }
         
@@ -72,5 +72,5 @@ if (window.location.hostname == 'sethclydesdale.github.io') {
       document.addEventListener('DOMContentLoaded', insertAds);
     }
     
-  }(window, document, 'ca-pub-2159011770843378'));
+  }(window, document, ''));
 }
